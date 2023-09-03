@@ -1,0 +1,91 @@
+/* Reset some default browser styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  /* Center the form on the page */
+  .new-item-form {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style the form input and button */
+  .form-row {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    background-color: #56566f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #8181a3;
+  }
+  
+  /* Style the header */
+  .header {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Style the to-do list items */
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .list input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Style the delete button */
+  .btn-danger {
+    background-color: #dcb235;
+  }
+  
+  .btn-danger:hover {
+    background-color: #d2cccc;
+  }
+  
+  /* Style the "Add" button */
+  .new-item-form .btn {
+    width: 100%;
+    background-color: #97c9d9;
+  }
+  
+  .new-item-form .btn:hover {
+    background-color: #95cce2;
+  }
+  
