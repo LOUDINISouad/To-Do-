@@ -22,24 +22,24 @@ Follow these steps to set up and run the project on your local machine:
 
 Clone the project's repository to your local machine using Git:
 
-\```bash
+```bash
 git clone https://github.com/LOUDINISouad/To-Do-
 
 
 - Install project dependencies
-\```bash
+
 `npm install`
 
 - To intialize the react js project using vite  run :
-\```bash
+
 `npm create vite@latest`
 
 - Navigate to the project directory:
-\```bash
+
 `cd ToDo`
 
 - Start the development server:
-\```bash
+
 `npm run dev`
 
 By following these steps, you'll have a Vite-based React project set up and ready to go, with all the required dependencies already installed.
