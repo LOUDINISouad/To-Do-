@@ -26,17 +26,13 @@ Clone the project's repository to your local machine using Git:
 git clone https://github.com/LOUDINISouad/To-Do-
 
 
-- Install project dependencies
-
-`npm install`
-
-- To intialize the react js project using vite  run :
-
-`npm create vite@latest`
-
 - Navigate to the project directory:
 
 `cd ToDo`
+
+- Install project dependencies
+
+`npm install`
 
 - Start the development server:
 

@@ -72,7 +72,7 @@ body {
   
   /* Style the delete button */
   .btn-danger {
-    background-color: #dcb235;
+    background-color: #cd898a;
   }
   
   .btn-danger:hover {
@@ -82,10 +82,10 @@ body {
   /* Style the "Add" button */
   .new-item-form .btn {
     width: 100%;
-    background-color: #97c9d9;
+    background-color: #d2b154;
   }
   
   .new-item-form .btn:hover {
-    background-color: #95cce2;
+    background-color: #5fa7c4;
   }
   
