@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 import { NewTodoForm } from './NewTodoForm';
+import { TodoList } from './TodoList';
 
 export default function App() {
   
-  const [todos, setTodos] =useState([])
+  const [todos, setTodos] =useState( () => {
+    const LocalValue = localStorage.getItem("ITEMS")
+    if(LocalValue == null) return []
+    return JSON.parse(LocalValue)
+  }
+
+  )
+
+  useEffect(()=> {
+    localStorage.setItem("ITEMS", JSON.stringify(todos))
+  }, [todos])
+
   function addToDo(title){
 
     setTodos(currentTodos =>{
@@ -39,29 +51,12 @@ export default function App() {
       
       <NewTodoForm onSubmit={addToDo} />  
       <h1 className="header">Organize your thoughts</h1>
+      <TodoList todos={todos} 
+      toggleTodo={toggleTodo} 
+      deleteTodo={deleteTodo}/>
 
      
-      <ul className="list">
-        {todos.map(todo =>{
-           return (
-            //you need to add a key to let every element has its spesific key 
-            <li key={todo.id}>
-            <label>
-              <input type="checkbox" checke={todo.completed} onChange={e => toggleTodo(todo.is, e.target.checked)} />
-              {todo.title}
-            </label>
-            <button onClick={() => deleteTodo(todo.id)} className="btn btn-danger">
-             Delete
-            </button>
-          </li>
-           )
-
-        })
-        
-      }
-       
-        
-      </ul>
+      
     </>
   );
 }
